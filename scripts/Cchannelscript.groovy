@@ -27,7 +27,7 @@ CSG getSheet(){
 	
 	CSG midhole = new Cube( 4.7,4.7,thickness*2).toCSG()
 
-	CSG sidething = new Cube (thickness, side , side).toCSG()
+	CSG sidething = new Cube (thickness, side , side).toCSG().movez(-thickness/2)
 	CSG sideHole = new Cube (thickness *2, 4.7, 4.7).toCSG()
 
 	CSG CChannelSiding = sidething.difference(sideHole)
